@@ -1,0 +1,22 @@
+	2024.10.18    new
+	
+	//角速度 
+		param.angular_v_kp = -2.49; //2.434;	2.480	//类似角度环中的kp，增加或减少此值以优化角速度的响应。
+    param.angular_v_ki = 0;			//改善稳态误差的修正
+    param.angular_v_kd = -0.69;			//0.998减少系统的震荡并提高稳定性。
+	  //角度环
+    param.angular_kp = -7.15;//13.483并级 -32.05 0 -6.205       12 5 0	增大kp会提高响应速度，但可能引入振荡。减小kp会减缓响应，但可能导致系统不稳定。
+    param.angular_ki = 0;			//通过逐步增加ki来消除稳态误差，但要注意过大的ki可能导致系统振荡。
+    param.angular_kd = -5.8;		//7.625增大kd可以减小振荡并改善系统的稳定性，特别是在系统接近设定值时，但过大的kd可能导致系统反应过慢。
+	  //初始化飞轮速度PID控制参数
+    param.fly_wheel_speed_kp = 0.85;//0.73		//控制飞轮速度的响应速度。一般情况下，kp越高，响应越快。
+    param.fly_wheel_speed_ki = 0.15;//0.32		//消除稳态误差。
+    param.fly_wheel_speed_kd = 0.01;			//减少振荡，帮助平稳控制飞轮速度。0
+	  //其他参数
+    param.angular_zero = 3.31;//角度零点0.51  3.225
+    param.fly_whell_speed_target = 0;//飞轮速度目标值
+    param.scope_flag = 0;//范围标志
+    param.Steer_Kp = 20;//舵机kp
+    param.Steer_Ki = 0.5;//舵机kp
+    param.Steer_Kd = 0;//舵机kd
+	

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "usart.h": "c",
+        "main.h": "c",
+        "math.h": "c",
+        "servo.h": "c",
+        "tim.h": "c",
+        "balance.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "stm32f4xx_hal_conf.h": "c",
+        "gpio.h": "c"
+    }
+}
